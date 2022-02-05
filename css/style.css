@@ -1,0 +1,264 @@
+body { 
+    position: relative;
+    background: rgb(230, 207, 230);
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+*
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner { 
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+.menu__list {
+    list-style: none;
+    display: flex;
+}
+/************header****************/
+.header{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 10px 0;
+    z-index: 9999;
+}
+.header__inner { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/******************menu-list****************/
+.menu__list-item { 
+    position: relative;
+    margin: 0 10px;
+}
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo1 {
+    width: 70px;
+}
+.menu__list-link { 
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.menu__list-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: rgb(95, 186, 223);
+
+    transition: all 1s;
+}
+
+.menu__list-link:hover::after {
+    width: 100%;
+}
+/*********************dropdown*****************/
+
+.menu_dropdown { 
+    position: absolute;
+
+    top: 100%;
+    left: -15;
+    right: 0;
+
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+.menu_dropdown-item {
+    margin: 3px 0;
+}
+.menu_dropdown-link {
+    position: relative;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: black;
+    text-decoration: none;
+    
+
+}
+
+.menu_dropdown-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: rgb(95, 186, 223);
+
+    transition: all 1s;
+}
+
+.menu_dropdown-link:hover::after{
+    width: 100%;
+}
+
+.menu__list-item:hover .arrow {
+    transform: rotate(180deg);
+
+}
+.menu__list-item:hover .menu_dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.header__button-link{
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    color: black;
+    text-decoration: none;
+    color: honeydew;
+
+    background: rgb(27, 160, 212);
+    border: 2px solid white;
+    box-shadow: 0px 5px 10px rgb(218, 111, 203);
+    border-radius: 10px;
+    transition: all 1s;
+}
+.header__button-link:hover{
+    color: rgb(24, 180, 207);
+    background-color: transparent;
+}
+.arrow { 
+    width: 7px;
+    margin-left: 4px;
+    transition: all 1s;
+}
+/****************intro*************/
+.intro {
+    position:relative;
+    height: 100vh;
+
+    padding: 170px 0 130px 0;
+    
+}
+.intro__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: ;
+    z-index: -1;
+
+}
+.intro__bg-img {
+    max-width: 100%;
+    height: auto;
+    
+
+}
+.intro__inner{
+    display: flex;
+    align-items: center;
+    z-index: index 2; ;
+}
+.intro__content {
+    max-width: 495px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.intro__content-title {
+    margin: 30px 0 40px;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 28px;
+}
+.intro__content-text {
+}
+.intro__content-links {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.intro__content-links-download {
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    color: black;
+    text-decoration: none;
+    color: honeydew;
+
+    background: rgb(27, 160, 212);
+    border: 2px solid white;
+    box-shadow: 0px 5px 10px rgb(218, 111, 203);
+    border-radius: 10px;
+    transition: all 1s;
+}
+.intro__content-links-download:hover{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+.intro__content-links-watch {
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    color: black;
+    text-decoration: none;
+    color: honeydew;
+
+    background: rgb(27, 160, 212);
+    border: 2px solid white;
+    box-shadow: 0px 5px 10px rgb(218, 111, 203);
+    border-radius: 10px;
+    transition: all 1s;
+   
+}
+/****************everneed*************/
+.everneed {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 2px;
+    text-align:center;
+    color: black;
+    
+    
+}
+.container {
+}
+.everneed__inner {
+}
+.everneed__title {
+}
+.everneed__items {
+}
+
+    
+
